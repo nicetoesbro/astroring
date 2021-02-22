@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\title{Celestial Mechanics valemid}
+\date{February 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Ellips}
+\begin{tikzpicture}
+    \node [fill=black, shape=circle, inner sep=1.5pt, label=below:$F_1$] (0) at (-0.44,2) {};
+    \node [fill=black, shape=circle, inner sep=1.5pt, label=below:$F_2$] (0) at (4.44,2) {};
+    \draw[thin] (2,2) ellipse (3cm and 1.75cm);
+    \draw[thin] (-1,2) -- (2,2);
+    \draw[ultra thick] (2,2) -- node[above]{a} (5,2);
+    \draw[thin] (2,0.25) -- (2,2);
+    \draw[ultra thick] (2,2) -- node[right]{b} (2,3.75);
+    \draw[thick] (-0.44,2) -- node[below]{c} (2,2);
+    \node [fill=black, shape=circle, inner sep=1.5pt, label= below right:$O$] (0) at (2,2) {};
+\end{tikzpicture}
+\begin{equation}
+    S = \pi ab
+\end{equation}
+\begin{equation}
+    e = \frac{c}{a}
+\end{equation}
+\begin{equation}
+    \frac{b^{2}}{a^{2}}= 1-e^{2}
+\end{equation}
+a on pikem pooltelg/semi-major axis
+\\b on lühem pooltelg/semi-minor axis
+\\Ekstrentrilisus e näitab ellipsi lapikust nullist üheni. Ringi e=0 ja lõigu e =1.
+\\pindala
+\\valemid
+\section{Kepleri seadused}
+I Iga planeedi orbiit on ellips, mille ühes fookuses on Päike.
+\\II Planeedi raadiusvektor katab võrdsete ajavahemike jooksul võrdsed pindalad.
+\\III 
+\begin{equation}
+    \frac{T^2_{1}}{T^2_{2}} = \frac{T^3_{1}}{T^3_{2}}
+\end{equation}
+\section{Kosmilised kiirused}
+I kosmiline kiirus on vajalik minemiseks orbiidile ümber Maa (7.91km/s)
+\\II on Maa külgtõmbejõust lahkumiseks (11.19km/s)
+\\III on Päikesesüsteemist lahkumiseks (42.1km/s)
+\begin{equation}
+    \\v=\sqrt{\frac{2GM}{R}}
+\end{equation}
+\\v on paokiirus e kiirus, mis on vajalik taevakehalt lahkumiseks
+\\M on taevakeha mass
+\\R on kaugus taevakeha keskmest
+\\G on gravitatsioonikonstant ($6.67*10^-11$)
+\end{document}
